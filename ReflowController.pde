@@ -160,8 +160,8 @@ void loop()
           nextPhaseChange = -1UL; // Hold Temperature for 10 Seconds
           // This phase never ends (500°C are never reached in a usual toaster oven!)
           break;
-        case 20: // One hour 100°C
-          heater.set_target_temperature(100);
+        case 20: // One hour 110°C
+          heater.set_target_temperature(110);
           nextPhaseChange = currentTime + 3600000UL; // Hold Temperature for 1 hour
           break;
         default: 
